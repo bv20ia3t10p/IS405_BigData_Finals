@@ -1,0 +1,1337 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "categories",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "a5f92740-a0c3-46e0-a877-39817102fd31",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CategoryId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "6665be0b-b6f0-4831-8bdb-c0bf6772b150",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 76,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CategoryName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "92077b14-a6ae-4481-a044-2c04bef9921d",
+                    "required": true,
+                    "sample": "Fishing",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "b734e963-787b-4d97-a934-7683e841f1b4",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "a5f92740-a0c3-46e0-a877-39817102fd31",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "d533bb93-5771-4096-8ab6-594ccebf9b87"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "ee663ef4-685f-45f7-a026-d7e256cca170",
+            "bucketId": "93bc85e3-cf5d-4419-9322-ca0efa8e9454",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "customers",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "fd630133-0beb-41cc-933b-1dbc22e5fc3c",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "e8d4ae0b-d9e3-4b22-91b3-f7bf4180bef3",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 1012,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerCity",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "e4257361-1427-4c12-b8a5-2e196c4ca5e7",
+                    "required": true,
+                    "sample": "Silver Spring",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerCountry",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "122116e0-ae0b-4d57-8794-bb05f98a7793",
+                    "required": true,
+                    "sample": "EE. UU.",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerFname",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "f9e0409a-6dc2-434d-ae31-a5a33aa88865",
+                    "required": true,
+                    "sample": "Mark",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerLname",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "233d1269-11ea-43b5-92da-3b0fb8f7c8da",
+                    "required": true,
+                    "sample": "Watts",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerPassword",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "1d6f4a6a-8c2f-4c73-8d3c-22692da196e9",
+                    "required": true,
+                    "sample": "pw1012",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerSegment",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "7b2c7dc7-b2f7-4a27-9bb9-afc51060ae2e",
+                    "required": true,
+                    "sample": "Corporate",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerState",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "95b94950-7291-4a50-8273-ff3f1a2ef69e",
+                    "required": true,
+                    "sample": "MD",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerStreet",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "ffa45c00-e3ee-47b9-8121-127370bd0c82",
+                    "required": true,
+                    "sample": "2210 Merry Leaf Row",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerZipcode",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "c8c9293e-86ab-49b4-a97c-5783e3078da1",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 98632,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerEmail",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "1607bb4d-7332-4eeb-91c8-03af1a5b891c",
+                    "required": true,
+                    "sample": "1012@fakeaddress.wobble",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "1b15fd0b-a5fe-4a07-9750-a8e163771a86",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "fd630133-0beb-41cc-933b-1dbc22e5fc3c",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "64c59c53-9763-4aab-8580-9ba086528d89"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "e8d4ae0b-d9e3-4b22-91b3-f7bf4180bef3",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "CustomerId_1",
+                    "GUID": "4b4c9a4b-1761-44c2-ba7e-fef110967319"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "17caad6d-06ac-4429-ba16-eeb765cd9b4a",
+            "bucketId": "93bc85e3-cf5d-4419-9322-ca0efa8e9454",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "departments",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "7da7a657-d92e-4b14-98d1-fbf28ff3cb06",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DepartmentName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "70359421-b1ed-4800-843d-fd7591128556",
+                    "required": true,
+                    "sample": "Fan Shop",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DepartmentId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "7188a8c0-9b35-4608-9209-99b951d150b5",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 12,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "52a0a847-9ac3-4c1a-b559-90528884e850",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "7da7a657-d92e-4b14-98d1-fbf28ff3cb06",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "87bfa6b4-e196-46dd-8e57-27ba0f20687b"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "7bc46d14-d87c-4c43-914a-915d737a116b",
+            "bucketId": "93bc85e3-cf5d-4419-9322-ca0efa8e9454",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "order_details",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "fde1dcb5-c5de-478b-9c39-8a84fe2230e9",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CategoryId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "24c53153-7630-4f18-bf64-cef56a9f2fa1",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 48,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CategoryName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "fcf515a1-fbce-49c0-9778-326f393fcb4e",
+                    "required": true,
+                    "sample": "Camping & Hiking",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DepartmentId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "2a5fc215-495d-47c6-a755-ce6724057340",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 7,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DepartmentName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "af2328bf-5405-4799-a740-020720119310",
+                    "required": true,
+                    "sample": "Fan Shop",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "8d57e760-eac4-4cd5-9644-6958d3865c29",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 403,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderItemDiscount",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "dce32101-e37c-4008-8296-c278572d382e",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 22.10000038,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderItemDiscountRate",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "292be663-ff62-4685-8da3-7cecf7722915",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 0.200000003,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderItemId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "78440962-3575-47e7-b4a6-5493f4517797",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 1001,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderItemProfitRatio",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "c1601fe8-cff4-4f85-97d4-ec8cc024baaf",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 0.370000005,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderItemQuantity",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "da52b678-48aa-438f-809f-032d8ed3b801",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 5,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Sales",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "2b655127-d3db-48d2-bd98-67bf6e7efb55",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 299.980011,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductPrice",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "bdb47559-21c4-49fd-8301-7a9931e939d4",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 299.980011,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderItemTotal",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "c6b26142-07ac-48a7-86a5-34737182ea31",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 239.9799957,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductCardId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "4c620046-0562-44b6-a8d8-044fead304c3",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 1073,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "018e580c-6b24-44e4-a59e-df3b9e22799a",
+                    "required": true,
+                    "sample": "Diamondback Women's Serene Classic Comfort Bi",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "68fe749c-0fbd-4e78-9cd5-ed0bc62000a9",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 12345,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d76a6390-a851-4653-a420-3da5ec6634db",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "fde1dcb5-c5de-478b-9c39-8a84fe2230e9",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "ce02f5e8-8715-4fc8-86ef-9290043495db"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "8d57e760-eac4-4cd5-9644-6958d3865c29",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "OrderId_1",
+                    "GUID": "8f4c5bb3-b574-4662-aa07-d5ef1b480571"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "4c620046-0562-44b6-a8d8-044fead304c3",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "ProductCardId_1",
+                    "GUID": "86fb9db9-3472-4066-80bc-243ea8e34870"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "78440962-3575-47e7-b4a6-5493f4517797",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "OrderItemId_1",
+                    "GUID": "bc377f27-f715-4d3a-b3eb-91a839214b6e"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "16ffd07f-8811-41c3-97a7-7a5e2d283ba7",
+            "bucketId": "93bc85e3-cf5d-4419-9322-ca0efa8e9454",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "orders",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "10e84e47-ba5f-447c-afd0-e259f581d3ed",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Type",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "0aa4cd8e-a99b-4fec-b5d4-37ca2c35a3d3",
+                    "required": true,
+                    "sample": "TRANSFER",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Daysforshipping(real)",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "051803d8-b494-408b-99a5-3e2cfa013ac3",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 6,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Daysforshipment(scheduled)",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "f400b0bc-fb40-423a-ba8b-b0ea0ec5ca23",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 4,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DeliveryStatus",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "be921b3f-6250-44c5-a38d-25f03ef02b52",
+                    "required": true,
+                    "sample": "Late delivery",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Late_delivery_risk",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "f99828ce-abfc-4990-a60e-8206be86401d",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 1,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerCity",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "b3794d7c-f97b-4269-a8bc-107ec51052f4",
+                    "required": true,
+                    "sample": "Moreno Valley",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerCountry",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "fe84c3b3-8b53-42d8-9902-6aa1372a0cd4",
+                    "required": true,
+                    "sample": "EE. UU.",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerEmail",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "c04219b8-db0c-4aef-bbc1-ddf80c1396c2",
+                    "required": true,
+                    "sample": "XXXXXXXXX",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerFname",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "6b62cc3a-7e35-47a9-a88c-d2e893d1e7ea",
+                    "required": true,
+                    "sample": "Kathryn",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "1d40ac34-47b1-4354-98c0-dc766c8058a0",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 12390,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerLname",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "2544be7e-b6ee-4cfd-a8fd-696960e7681d",
+                    "required": true,
+                    "sample": "Smith",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerSegment",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "2e5919ed-e7bf-4473-9746-b9f68c019dbe",
+                    "required": true,
+                    "sample": "Home Office",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerState",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "5cf5dac8-f11d-44d7-928f-6fa7baaed7a6",
+                    "required": true,
+                    "sample": "CA",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerStreet",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "8f8c289a-3cbd-48bb-87b0-277889ab174c",
+                    "required": true,
+                    "sample": "1490 Amber Forest Forest",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CustomerZipcode",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "959d195f-cb9b-42b6-8649-3e1b10184951",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 98208,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "orderdate(DateOrders)",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "ef052106-2c02-499c-836f-ef272fe6f08d",
+                    "required": true,
+                    "sample": "1/18/2015 6:27",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "14844129-57d9-4840-b0ea-4e077f080d40",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 1184,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "OrderStatus",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "36c9328e-d0c8-40ad-b9e7-f54a6f177249",
+                    "required": true,
+                    "sample": "PENDING",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "shippingdate(DateOrders)",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "39ca2d1f-c5c7-48f3-85a7-c37c89523073",
+                    "required": true,
+                    "sample": "1/23/2015 6:27",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ShippingMode",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "245db3dd-7b75-4b7c-b2d9-ce29594ec4c8",
+                    "required": true,
+                    "sample": "Second Class",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Total",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "1c962345-16b5-4b34-81a2-59d8875014be",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 239.9799957,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "b67ef42b-2d28-4b78-8d08-3645740d7409",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "10e84e47-ba5f-447c-afd0-e259f581d3ed",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "aec7e3ba-966a-41cd-9bb7-da3f917a3be4"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "14844129-57d9-4840-b0ea-4e077f080d40",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "OrderId_1",
+                    "GUID": "27f9c612-18f1-4087-bba7-9842b3d0a8d2"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "1d40ac34-47b1-4354-98c0-dc766c8058a0",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "CustomerId_1",
+                    "GUID": "4ed7e4ef-4661-40aa-ab4e-57bd588ea2c7"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "7b3e053d-41b7-416d-be57-4e233ca04760",
+            "bucketId": "93bc85e3-cf5d-4419-9322-ca0efa8e9454",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "products",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "c54afcae-8eea-4013-b3f5-20076e2b71d4",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DepartmentId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "b0ad7458-7fe7-4f12-9b9f-1f13a6572486",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 12,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DepartmentName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "46c0cf55-de6d-4cae-9deb-3f8664bc940f",
+                    "required": true,
+                    "sample": "Apparel",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CategoryId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "5101b0a8-ef68-479d-8624-caaa06c6700e",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 76,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CategoryName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "34f5d67f-9c65-456c-8aec-ba39ac996087",
+                    "required": true,
+                    "sample": "Women's Clothing",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductCardId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "1f81dec4-ff0a-48bc-b78d-c4ceac4cd0ac",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 1363,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductName",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "06d9d876-9bd2-4054-938d-869f6eae64c6",
+                    "required": true,
+                    "sample": "Summer dresses",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductPrice",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "6facda35-daa0-4eaa-8fe0-24e012f8e13d",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 124.9899979,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductStatus",
+                    "isActivated": true,
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "multipleTypes": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "07a890b7-fb60-45c7-b7fe-416b7770d558",
+                            "primaryKey": false
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "boolean",
+                            "GUID": "c33b8679-03ce-4498-a68c-bcb54233a748",
+                            "primaryKey": false
+                        }
+                    ],
+                    "GUID": "0dbe3be9-6d5c-4f87-aea6-95abd1276f4f",
+                    "required": true,
+                    "sample": 0,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductDescription",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "d8a1c478-176d-49c5-9d50-3f0e587522ef",
+                    "required": true,
+                    "sample": "<p>Introducing our exquisite collection of Summer Dresses – where style meets comfort to embrace the vibrant spirit of the season. Elevate your summer wardrobe with our carefully curated dresses that effortlessly blend fashion-forward designs with lightweight fabrics, ensuring you stay cool, chic, and on-trend throughout the warmer months. From casual outings to special occasions, our Summer Dresses are designed to make a statement and keep you feeling fabulous under the sun.</p><p><strong>Key Features:</strong></p><ol><li><p><strong>Breathable Fabrics for Summer Comfort:</strong>\nDive into summer with dresses crafted from breathable fabrics. Our collection features lightweight materials that keep you cool and comfortable, allowing you to embrace the warmth of the season with ease.</p></li><li><p><strong>Stylish and On-Trend Designs:</strong>\nStay ahead of the fashion curve with our on-trend designs. From floral prints to vibrant solids, our summer dresses showcase the latest styles, ensuring you make a fashion statement wherever your summer adventures take you.</p></li><li><p><strong>Versatile Styles for Every Occasion:</strong>\nWhether it's a casual day out, a beach vacation, or a special event, our Summer Dresses offer versatile styles to suit every occasion. From sundresses to maxi dresses, find the perfect outfit for your summer escapades.</p></li><li><p><strong>Comfortable Fits for Effortless Style:</strong>\nEmbrace comfort without compromising on style. Our summer dresses are designed with comfortable fits, allowing you to move freely and confidently while looking effortlessly chic.</p></li><li><p><strong>Eye-Catching Patterns and Prints:</strong>\nMake a statement with eye-catching patterns and prints. From bold florals to playful polka dots, our dresses add a touch of fun and personality to your summer wardrobe, ensuring you stand out in the crowd.</p></li><li><p><strong>Adjustable Straps for a Customized Fit:</strong>\nEnjoy a customized fit with dresses featuring adjustable straps. Achieve the perfect length and fit, catering to your unique style and body shape for a flattering and comfortable look.</p></li><li><p><strong>Cooling Necklines for Warm Days:</strong>\nKeep cool on warm days with dresses featuring cooling necklines. Whether you prefer a V-neck, off-the-shoulder, or halter style, our dresses provide a breezy and stylish solution for sunny weather.</p></li><li><p><strong>Light and Airy Silhouettes:</strong>\nEmbrace the summer breeze with light and airy silhouettes. Our dresses flow effortlessly, creating a graceful and feminine look that captures the carefree essence of the season.</p></li><li><p><strong>Functional Pockets for Convenience:</strong>\nEnjoy the convenience of functional pockets in select dresses. Perfect for stashing small essentials or striking a relaxed pose, these pockets add a practical touch to your summer style.</p></li><li><p><strong>Elastic Waistbands for a Flattering Fit:</strong>\nAchieve a flattering fit with dresses featuring elastic waistbands. Cinch your waist comfortably, creating a defined silhouette that enhances your natural curves while offering flexibility and comfort.</p></li><li><p><strong>Elegant Maxi Dresses for Effortless Elegance:</strong>\nElevate your summer wardrobe with elegant maxi dresses. Perfect for both casual and dressy occasions, these floor-length dresses exude effortless elegance, making a bold statement wherever you go.</p></li><li><p><strong>Sundresses with Playful Prints:</strong>\nEmbrace the carefree spirit of summer with sundresses adorned in playful prints. From tropical motifs to geometric designs, our sundresses capture the essence of sunny days and warm evenings.</p></li><li><p><strong>Chic Wrap Dresses for Versatility:</strong>\nAdd a touch of sophistication to your summer wardrobe with chic wrap dresses. Versatile and universally flattering, these dresses offer a timeless style that seamlessly transitions from day to night.</p></li><li><p><strong>Dressy Options for Special Occasions:</strong>\nMake a statement at summer events with our dressy options. Whether it's a wedding, garden party, or evening soiree, our collection includes dresses that exude elegance and celebrate the joy of the season.</p></li><li><p><strong>Easy-Care Fabrics for Low Maintenance:</strong>\nSimplify your summer routine with easy-care fabrics. Our dresses are crafted for low maintenance, allowing you to focus on enjoying the season without worrying about complicated care instructions.</p></li><li><p><strong>Flowy Skirts for Effortless Movement:</strong>\nDance through summer days with dresses featuring flowy skirts. The lightweight and free-flowing designs create an enchanting movement that adds a touch of whimsy to your summer style.</p></li><li><p><strong>A Variety of Lengths for Personal Preference:</strong>\nCater to your personal style with a variety of lengths. From mini to midi and maxi, our summer dresses offer options for every preference, ensuring you find the perfect length to suit your taste.</p></li><li><p><strong>Quality Craftsmanship for Durability:</strong>\nTrust in quality craftsmanship that ensures durability and longevity. Our summer dresses are made with attention to detail, providing you with wardrobe staples that stand the test of time and multiple summer seasons.</p></li><li><p><strong>Effortless Pairing with Accessories:</strong>\nEnhance your summer style with effortless pairing options. Our dresses serve as the perfect canvas for accessorizing, allowing you to showcase your favorite jewelry, sunglasses, and sandals for a personalized look.</p></li><li><p><strong>Sizes for Every Body Shape:</strong></p></li></ol>",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ProductSoldQuantity",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "6a818c05-fd0e-47c1-9fa2-a5a657eff93f",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 73710,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "9cd27f82-0269-4945-b768-bfe36ed2220d",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "c54afcae-8eea-4013-b3f5-20076e2b71d4",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "60df23f0-54e0-4233-9b6a-7ea11964651a"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "1f81dec4-ff0a-48bc-b78d-c4ceac4cd0ac",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "ProductCardId_1",
+                    "GUID": "13ed40e2-07b3-4b5c-8e29-27a724a4b70a"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "5c55d01b-4086-4b4a-91c4-9c814f1faa51",
+            "bucketId": "93bc85e3-cf5d-4419-9322-ca0efa8e9454",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "wobble",
+            "type": "bucket",
+            "collectionIds": [
+                "ee663ef4-685f-45f7-a026-d7e256cca170",
+                "17caad6d-06ac-4429-ba16-eeb765cd9b4a",
+                "7bc46d14-d87c-4c43-914a-915d737a116b",
+                "16ffd07f-8811-41c3-97a7-7a5e2d283ba7",
+                "7b3e053d-41b7-416d-be57-4e233ca04760",
+                "5c55d01b-4086-4b4a-91c4-9c814f1faa51"
+            ],
+            "backgroundColor": {
+                "r": 54,
+                "g": 69,
+                "b": 79,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "93bc85e3-cf5d-4419-9322-ca0efa8e9454",
+            "hackoladeMeta": {},
+            "code": "",
+            "enableSharding": false
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "93bc85e3-cf5d-4419-9322-ca0efa8e9454": "wobble",
+        "a5f92740-a0c3-46e0-a877-39817102fd31": "_id",
+        "6665be0b-b6f0-4831-8bdb-c0bf6772b150": "CategoryId",
+        "92077b14-a6ae-4481-a044-2c04bef9921d": "CategoryName",
+        "ee663ef4-685f-45f7-a026-d7e256cca170": "categories",
+        "fd630133-0beb-41cc-933b-1dbc22e5fc3c": "_id",
+        "e8d4ae0b-d9e3-4b22-91b3-f7bf4180bef3": "CustomerId",
+        "e4257361-1427-4c12-b8a5-2e196c4ca5e7": "CustomerCity",
+        "122116e0-ae0b-4d57-8794-bb05f98a7793": "CustomerCountry",
+        "f9e0409a-6dc2-434d-ae31-a5a33aa88865": "CustomerFname",
+        "233d1269-11ea-43b5-92da-3b0fb8f7c8da": "CustomerLname",
+        "1d6f4a6a-8c2f-4c73-8d3c-22692da196e9": "CustomerPassword",
+        "7b2c7dc7-b2f7-4a27-9bb9-afc51060ae2e": "CustomerSegment",
+        "95b94950-7291-4a50-8273-ff3f1a2ef69e": "CustomerState",
+        "ffa45c00-e3ee-47b9-8121-127370bd0c82": "CustomerStreet",
+        "c8c9293e-86ab-49b4-a97c-5783e3078da1": "CustomerZipcode",
+        "1607bb4d-7332-4eeb-91c8-03af1a5b891c": "CustomerEmail",
+        "17caad6d-06ac-4429-ba16-eeb765cd9b4a": "customers",
+        "7da7a657-d92e-4b14-98d1-fbf28ff3cb06": "_id",
+        "70359421-b1ed-4800-843d-fd7591128556": "DepartmentName",
+        "7188a8c0-9b35-4608-9209-99b951d150b5": "DepartmentId",
+        "7bc46d14-d87c-4c43-914a-915d737a116b": "departments",
+        "fde1dcb5-c5de-478b-9c39-8a84fe2230e9": "_id",
+        "24c53153-7630-4f18-bf64-cef56a9f2fa1": "CategoryId",
+        "fcf515a1-fbce-49c0-9778-326f393fcb4e": "CategoryName",
+        "2a5fc215-495d-47c6-a755-ce6724057340": "DepartmentId",
+        "af2328bf-5405-4799-a740-020720119310": "DepartmentName",
+        "8d57e760-eac4-4cd5-9644-6958d3865c29": "OrderId",
+        "dce32101-e37c-4008-8296-c278572d382e": "OrderItemDiscount",
+        "292be663-ff62-4685-8da3-7cecf7722915": "OrderItemDiscountRate",
+        "78440962-3575-47e7-b4a6-5493f4517797": "OrderItemId",
+        "c1601fe8-cff4-4f85-97d4-ec8cc024baaf": "OrderItemProfitRatio",
+        "da52b678-48aa-438f-809f-032d8ed3b801": "OrderItemQuantity",
+        "2b655127-d3db-48d2-bd98-67bf6e7efb55": "Sales",
+        "bdb47559-21c4-49fd-8301-7a9931e939d4": "ProductPrice",
+        "c6b26142-07ac-48a7-86a5-34737182ea31": "OrderItemTotal",
+        "4c620046-0562-44b6-a8d8-044fead304c3": "ProductCardId",
+        "018e580c-6b24-44e4-a59e-df3b9e22799a": "ProductName",
+        "68fe749c-0fbd-4e78-9cd5-ed0bc62000a9": "CustomerId",
+        "16ffd07f-8811-41c3-97a7-7a5e2d283ba7": "order_details",
+        "10e84e47-ba5f-447c-afd0-e259f581d3ed": "_id",
+        "0aa4cd8e-a99b-4fec-b5d4-37ca2c35a3d3": "Type",
+        "051803d8-b494-408b-99a5-3e2cfa013ac3": "Daysforshipping(real)",
+        "f400b0bc-fb40-423a-ba8b-b0ea0ec5ca23": "Daysforshipment(scheduled)",
+        "be921b3f-6250-44c5-a38d-25f03ef02b52": "DeliveryStatus",
+        "f99828ce-abfc-4990-a60e-8206be86401d": "Late_delivery_risk",
+        "b3794d7c-f97b-4269-a8bc-107ec51052f4": "CustomerCity",
+        "fe84c3b3-8b53-42d8-9902-6aa1372a0cd4": "CustomerCountry",
+        "c04219b8-db0c-4aef-bbc1-ddf80c1396c2": "CustomerEmail",
+        "6b62cc3a-7e35-47a9-a88c-d2e893d1e7ea": "CustomerFname",
+        "1d40ac34-47b1-4354-98c0-dc766c8058a0": "CustomerId",
+        "2544be7e-b6ee-4cfd-a8fd-696960e7681d": "CustomerLname",
+        "2e5919ed-e7bf-4473-9746-b9f68c019dbe": "CustomerSegment",
+        "5cf5dac8-f11d-44d7-928f-6fa7baaed7a6": "CustomerState",
+        "8f8c289a-3cbd-48bb-87b0-277889ab174c": "CustomerStreet",
+        "959d195f-cb9b-42b6-8649-3e1b10184951": "CustomerZipcode",
+        "ef052106-2c02-499c-836f-ef272fe6f08d": "orderdate(DateOrders)",
+        "14844129-57d9-4840-b0ea-4e077f080d40": "OrderId",
+        "36c9328e-d0c8-40ad-b9e7-f54a6f177249": "OrderStatus",
+        "39ca2d1f-c5c7-48f3-85a7-c37c89523073": "shippingdate(DateOrders)",
+        "245db3dd-7b75-4b7c-b2d9-ce29594ec4c8": "ShippingMode",
+        "1c962345-16b5-4b34-81a2-59d8875014be": "Total",
+        "7b3e053d-41b7-416d-be57-4e233ca04760": "orders",
+        "c54afcae-8eea-4013-b3f5-20076e2b71d4": "_id",
+        "b0ad7458-7fe7-4f12-9b9f-1f13a6572486": "DepartmentId",
+        "46c0cf55-de6d-4cae-9deb-3f8664bc940f": "DepartmentName",
+        "5101b0a8-ef68-479d-8624-caaa06c6700e": "CategoryId",
+        "34f5d67f-9c65-456c-8aec-ba39ac996087": "CategoryName",
+        "1f81dec4-ff0a-48bc-b78d-c4ceac4cd0ac": "ProductCardId",
+        "06d9d876-9bd2-4054-938d-869f6eae64c6": "ProductName",
+        "6facda35-daa0-4eaa-8fe0-24e012f8e13d": "ProductPrice",
+        "0dbe3be9-6d5c-4f87-aea6-95abd1276f4f": "ProductStatus",
+        "d8a1c478-176d-49c5-9d50-3f0e587522ef": "ProductDescription",
+        "6a818c05-fd0e-47c1-9fa2-a5a657eff93f": "ProductSoldQuantity",
+        "5c55d01b-4086-4b4a-91c4-9c814f1faa51": "products"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "0052efa7-ecec-4d8a-b23e-c3366f0f5b48"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "05115822-8d83-4830-bf3d-38d9fee0b0ed"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "1d2072c9-88ae-4161-89a6-0d0fb4ad8321"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-12-18T16:15:49.268Z",
+    "GUID": "70b914e5-65d3-4429-be4f-bf3048b6c2f7",
+    "isLineageEnabled": false,
+    "lastModifTS": "2023-12-18T16:28:26.253Z",
+    "persistenceSchemaVersion": "7",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.0.4"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "ee663ef4-685f-45f7-a026-d7e256cca170",
+                        "x": 1778.5514124293782,
+                        "y": 949.6700564971754,
+                        "width": 264,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "17caad6d-06ac-4429-ba16-eeb765cd9b4a",
+                        "x": 1356.2259887005646,
+                        "y": 1403.94802259887,
+                        "width": 289,
+                        "height": 246,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7bc46d14-d87c-4c43-914a-915d737a116b",
+                        "x": 1306.2259887005646,
+                        "y": 1703.94802259887,
+                        "width": 282,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "16ffd07f-8811-41c3-97a7-7a5e2d283ba7",
+                        "x": 1306.2259887005646,
+                        "y": 1003.94802259887,
+                        "width": 324,
+                        "height": 336,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7b3e053d-41b7-416d-be57-4e233ca04760",
+                        "x": 1706.2259887005646,
+                        "y": 1353.94802259887,
+                        "width": 352,
+                        "height": 426,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "5c55d01b-4086-4b4a-91c4-9c814f1faa51",
+                        "x": 1732.69604519774,
+                        "y": 1070.458757062147,
+                        "width": 308,
+                        "height": 228,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1266.2259887005646,
+                        "y": 909.6700564971754,
+                        "GUID": "93bc85e3-cf5d-4419-9322-ca0efa8e9454"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {}
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
